@@ -31,7 +31,7 @@ div#slideArea {
     width: 1000px;
     height: 300px;
 
-    position: relative;
+/*    position: relative;  슬라이드쇼 공통텍스트 용 */
 /*    border: 10px solid #08f;*/
 
     overflow: hidden;
@@ -51,17 +51,20 @@ div#slideShuttleFrame::after {
 
 #slideShuttleFrame>a {
     float: left;
-}
-/* 슬라이드쇼 영역 끝 */
 
-    /* 슬라이드 텍스트 영역 시작 */
+    position: relative;  /*슬라이드쇼 개별텍스트 용*/
+}
+
+
+    /* 슬라이드 텍스트 시작(고정 공통텍스트) */
+/*
 span#slideTxt {
     width: 200px;
     height: 100px;
     font-size: 30px;
     text-align: center;
     line-height: 100px;
-/*    border: 1px solid #000;*/
+    border: 1px solid #000;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.63);
     display: inline-block;
@@ -71,8 +74,32 @@ span#slideTxt {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-    /* 슬라이드 텍스트 영역 끝 */
+*/
+    /* 슬라이드 텍스트 끝(고정 공통텍스트) */
 
+    /* 슬라이드 개별 텍스트 시작 */
+div#slideArea span {
+    width: 200px;
+    height: 100px;
+    color: #f80;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+
+    position: absolute;
+    left: 50%;
+    top: 40%;
+
+    transform: translate(-50%, -50%);
+}
+    /* 슬라이드 개별 텍스트 끝 */
+
+
+/* 슬라이드쇼 영역 끝 */
 
 
 
