@@ -30,6 +30,8 @@ div#wrap {
 div#slideArea {
     width: 1000px;
     height: 300px;
+
+    position: relative;
 /*    border: 10px solid #08f;*/
 
     overflow: hidden;
@@ -52,7 +54,24 @@ div#slideShuttleFrame::after {
 }
 /* 슬라이드쇼 영역 끝 */
 
+    /* 슬라이드 텍스트 영역 시작 */
+span#slideTxt {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+/*    border: 1px solid #000;*/
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.63);
+    display: inline-block;
 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+    /* 슬라이드 텍스트 영역 끝 */
 
 
 
